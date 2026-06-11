@@ -1,0 +1,26 @@
+import React from "react";
+import { Link } from "react-router-dom";
+
+function Signup() {
+  return (
+    <div className="form-container">
+      <h2>Create Account</h2>
+
+      <form className="form">
+        <input type="text" placeholder="Full Name" required />
+
+        <input type="email" placeholder="Email Address" required />
+
+        <input type="password" placeholder="Password" required />
+
+        <button type="submit">Sign Up</button>
+      </form>
+
+      <p>
+        Already have an account? <Link to="/login">Login</Link>
+      </p>
+    </div>
+  );
+}
+
+export default Signup;
